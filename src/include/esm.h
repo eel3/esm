@@ -2,7 +2,7 @@
 /**
  * @brief   ESM: public API interfaces.
  * @author  eel3
- * @date    2017-10-18
+ * @date    2018-01-29
  */
 /* ********************************************************************** */
 
@@ -15,6 +15,8 @@
 #else  /* def __cplusplus */
 #   include <stdbool.h>
 #endif /* def __cplusplus */
+
+#include "esm_types.h"
 
 /* ---------------------------------------------------------------------- */
 /* Error type and codes */
@@ -34,11 +36,6 @@ typedef int32_t ESM_ERR;
 /* ---------------------------------------------------------------------- */
 /* Data types */
 /* ---------------------------------------------------------------------- */
-
-/** Event ID type (must be greater than or equal to 0). */
-typedef int32_t ESM_EVENT_ID;
-/** "No event happen" event ID value. */
-#define ESM_EVENT_ID_NONE (-1)
 
 /** Timer ID type (must be greater than or equal to 0). */
 typedef uint32_t ESM_TIMER_ID;
