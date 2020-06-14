@@ -1,6 +1,6 @@
 # @brief   ESM: Makefile for sample application (Windows MinGW/TDM-GCC)
 # @author  eel3
-# @date    2017-10-18
+# @date    2020-05-31
 
 # ---------------------------------------------------------------------
 
@@ -9,7 +9,7 @@ CC             := $(PREFIX)gcc
 
 CFLAGS          =
 LDFLAGS         =
-LDLIBS         :=
+LDLIBS         := -lstdc++
 
 CCDEFS          =
 OBJADD         :=
