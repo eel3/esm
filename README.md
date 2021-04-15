@@ -25,7 +25,8 @@ Usage
 1.  Add all source files in [src/](src/) directory to your project.
 2.  Implement machdep library.
     See [src/lib/esm_md.h](src/lib/esm_md.h),
-    [src/machdep/sample/esm_md.c](src/machdep/sample/esm_md.c).
+    [src/machdep/sample/esm_md.c](src/machdep/sample/esm_md.c),
+    [src/machdep/sample/esm_types.h](src/machdep/sample/esm_types.h).
 3.  Implement configuration header file.
     See [src/machdep/sample/esm_config.h](src/machdep/sample/esm_config.h).
 4.  Use public API functions.
