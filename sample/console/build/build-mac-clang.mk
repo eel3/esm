@@ -1,6 +1,6 @@
 # @brief   ESM: Makefile for sample application (macOS clang)
 # @author  eel3
-# @date    2017-10-18
+# @date    2022-02-09
 
 # ---------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ USE_ASSERT     :=
 SDKROOT        := $(shell xcodebuild -version -sdk macosx | sed -n '/^Path: /s///p')
 
 CPPFLAGS       := -isysroot "$(SDKROOT)"
-TARGET_ARCH    := -mmacosx-version-min=10.11 -arch i386 -arch x86_64
+TARGET_ARCH    := -mmacosx-version-min=10.15 -arch x86_64 -arch arm64
 
 # ---------------------------------------------------------------------
 
