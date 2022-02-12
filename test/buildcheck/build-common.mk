@@ -1,6 +1,6 @@
 # @brief   ESM: Makefile for checking the syntax (Unix environment)
 # @author  eel3
-# @date    2017-10-18
+# @date    2022-02-10
 
 # ---------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ endif
 
 CCDEFS     +=
 OPTIM      ?= -O0
-WARN       ?= -Wall -std=c90 -pedantic \
+WARN       ?= -Wall -std=c99 -pedantic \
               -Wextra \
               -Wunused-result \
               -Wno-unused-function -Wbad-function-cast -Wcast-align \
