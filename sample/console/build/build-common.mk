@@ -1,6 +1,6 @@
 # @brief   ESM: Makefile for sample application (Unix environment)
 # @author  eel3
-# @date    2017-10-18
+# @date    2022-02-11
 
 # ---------------------------------------------------------------------
 
@@ -50,9 +50,8 @@ WARN       ?= -Wall -pedantic \
               -Wunused-result \
               -Wno-unused-function -Wcast-align \
                   -Wmissing-include-dirs -Wundef \
-                  -Werror-implicit-function-declaration \
               # -Wno-long-long
-CWARN      ?= -std=c89 $(WARN) -Wbad-function-cast
+CWARN      ?= -std=c99 $(WARN) -Wbad-function-cast -Werror-implicit-function-declaration
 CXXWARN    ?= -std=c++11 $(WARN)
 
 CFLAGS     += $(OPTIM) $(CWARN) $(WARNADD)
